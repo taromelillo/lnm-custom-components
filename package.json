@@ -29,6 +29,9 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "npm run storybook",
     "build": "npm run clean && tsc -b && npm run copyfiles",
@@ -39,7 +42,8 @@
     "chromatic": "npx chromatic --project-token=chpt_d8435f327993aaa",
     "clean": "rimraf dist/",
     "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
-    "push:npm": "np"
+    "push:npm": "np",
+    "test": ""
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.3",
